@@ -1,0 +1,4 @@
+#!/bin/bash
+
+TT_CANbusControl_test script ~/.bin/Radio/strasbourg-MMCAN-Radio.script
+

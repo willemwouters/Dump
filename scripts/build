@@ -1,0 +1,200 @@
+#!/bin/bash
+PROJECTBASE=personal
+BUILDTYPE=debug
+CLEANCOMMAND=""
+if [ $2 ] 
+then
+	if [ $2 = "clean" ] 
+	then
+		CLEANCOMMAND="clean"
+	else
+	  PROJECTBASE=$2
+	fi
+fi
+
+if [ $3 ]
+then
+	if [ $3 = "clean" ] 
+	then
+	  CLEANCOMMAND="clean"
+  else
+	  BUILDTYPE=$3
+	fi
+fi
+
+if [ $3 ]
+then
+  if [ $3 = "clean" ] 
+	then
+	  CLEANCOMMAND="clean"
+  fi
+fi
+PROJECTDIR=/home/wouters/perforce/$PROJECTBASE/Android/Build
+PROJECTNAME=chengdu
+
+MAXTHREADS=12
+
+PROJECTCORRECT=0
+
+COMMAND=()
+AppNames=()
+AppFileNames=()
+AppPackageNames=()
+
+AppNames[1]="FocusClientApp"
+AppFileNames[1]="FocusClientApp"
+AppPackageNames[1]="com.tomtom.focus.client.app"
+
+AppNames[2]="BluetoothApp"
+AppFileNames[2]="BluetoothApp"
+AppPackageNames[2]="com.tomtom.app.bluetooth"
+
+AppNames[3]="HandsfreeApp"
+AppFileNames[3]="HandsfreeApp"
+AppPackageNames[3]="com.tomtom.app.handsfree"
+
+AppNames[4]="PositionEngine"
+AppFileNames[4]="PositionEngine"
+AppPackageNames[4]="com.tomtom.positioning"
+
+AppNames[5]="SourceManagerService"
+AppFileNames[5]="SourceManagerService"
+AppPackageNames[5]="com.tomtom.audio.source"
+
+AppNames[6]="ServicesApp"
+AppFileNames[6]="servicesapp"
+AppPackageNames[6]="com.tomtom.services"
+
+
+AppNames[7]="VehicleStates"
+AppFileNames[7]="VehicleStates"
+AppPackageNames[7]="com.tomtom.systemstatemanager.service"
+
+AppNames[8]="VehicleRadioService"
+AppFileNames[8]="VehicleRadioService"
+AppPackageNames[8]="com.tomtom.vehicleradio.service"
+
+
+AppNames[9]="MediaApp"
+AppFileNames[9]="mediaapp"
+AppPackageNames[9]="com.tomtom.media"
+
+
+AppNames[10]="ChromeService"
+AppFileNames[10]="chromeservice"
+AppPackageNames[10]="com.tomtom.ui.chrome"
+
+AppNames[11]="MultimediaService"
+AppFileNames[11]="MultimediaService"
+AppPackageNames[11]="com.tomtom.multimedia.service"
+
+AppNames[12]="VehicleApps"
+AppFileNames[12]="vehicleapps"
+AppPackageNames[12]="com.tomtom.vehicle.apps"
+
+
+
+AppNames[13]="InterruptingEventsService"
+AppFileNames[13]="InterruptingEvents_Service"
+AppPackageNames[13]="com.tomtom.ui.ie.service"
+
+AppNames[14]="TextToSpeechInterface"
+AppFileNames[14]="TextToSpeechInterface"
+AppPackageNames[14]="com.tomtom.audio.tts"
+
+VAR=(movinand home bluetooth handsfree position sourcemanager services vehiclestates radioservice media chrome mediaservice vehicle eventclient speechinterface)
+
+
+
+
+COMMAND[0]="cd $PROJECTDIR;./build-all.sh $CLEANCOMMAND compile movinand -ctdev  -$PROJECTNAME -$BUILDTYPE -nop4 -Dbuild.maxThreads=$MAXTHREADS -Dbuild.nativeThreads=$MAXTHREADS; notify-send 'Build process' 'The Build is Successful' -i /usr/share/pixmaps/gnome-term.png -t 5000; nautilus ./target/$PROJECTNAME/movinand_image "
+
+B=$1
+PROJECTCOUNT=-1
+
+
+
+#CHECK FIRST PARAMETER
+if [ -z $1 ] 
+then echo 'First parameter should be target project!' 
+B=-h
+fi
+COUNTER=0
+#ITERATE TROUGH PROJECTS
+for i in "${VAR[@]}"
+do
+  if [ $i = $B ]
+  then 
+  PROJECTCORRECT=1
+  PROJECTCOUNT=$COUNTER
+  fi
+  let COUNTER=COUNTER+1
+done
+
+
+
+if [ $PROJECTCOUNT -gt 0 ]
+then
+  AppName="${AppNames[$PROJECTCOUNT]}"
+  AppFileName="${AppFileNames[$PROJECTCOUNT]}"
+  AppPackageName="${AppPackageNames[$PROJECTCOUNT]}"
+  GENERALCOMMAND="cd $PROJECTDIR;./build-all.sh $CLEANCOMMAND compile -ctdev  -$PROJECTNAME -Dbuild.scope=$AppName -debug -nop4;adb shell rm /system/app/$AppFileName-$BUILDTYPE.apk;adb uninstall $AppPackageName"
+else
+  GENERALCOMMAND=$COMMAND[$PROJECTCOUNT]
+fi
+
+
+
+if [ $B = "-h" ]  #CHECK FOR HELP COMMAND
+then 
+	echo "List of projects:"
+	for i in "${VAR[@]}"
+	do
+	  echo $i
+	done
+ else 
+	if [ $PROJECTCORRECT -eq 1 ] #check if project found.
+	then 
+	  echo 'Project is CORRECT!'
+	  echo 'Start processing ' $PROJECTBASE": ${VAR[$PROJECTCOUNT]}"
+    OIFS=$IFS
+    IFS=';'
+    arr2=$GENERALCOMMAND
+    for x in $arr2
+    do
+      echo $x
+      if [[ "$x" =~ .*cd.* ]] 
+	    then
+        eval $x
+      else
+	      OUTPUT=$(eval $x)
+      fi
+     
+
+	    if [[ "$x" =~ .*build-all.* ]] 
+	    then
+        if [ $BUILDTYPE = "debug" ]
+        then
+	      PACKAGENAME=$(echo $OUTPUT | grep "Debug Package:" | sed -e 's,.*Debug Package: \([^<]*\).*,\1,g')	
+        else
+	      PACKAGENAME=$(echo $OUTPUT | grep "Release Package:" | sed -e 's,.*Release Package: \([^<]*\).*,\1,g')	
+        fi
+	    fi
+
+    done
+
+if [ $PROJECTCOUNT -gt 0 ]
+then
+    echo adb install $PACKAGENAME
+    adb install $PACKAGENAME
+    notify-send --urgency=normal -i echo 'Build Finished'
+fi
+    IFS=$OIFS
+	else
+	  echo 'Project does not exist in list!'
+	fi
+fi
+
+#
+#
+#nautilus ./target/strasbourg/movinand_image

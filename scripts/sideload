@@ -1,0 +1,90 @@
+#!/bin/bash
+#PATH DEFINES
+BASEDIR=~
+P4BASEDIR=$BASEDIR/perforce
+P4PERSONAL=$P4BASEDIR/personal
+LIBPATH=$P4PERSONAL/Android/Common/Libraries
+UILIBPATH=$LIBPATH/UILib/src
+IELIBPATH=$LIBPATH/TomTomSettingsProvider/src
+SIDEPATH=$LIBPATH/TomTomSideLoading/bin
+ADDONSPATH=$ANDROID_HOME/add-ons
+ADDONNAME=$(ls -1 $ADDONSPATH/ | head -n1)
+ADDONPATH=$ADDONSPATH/$ADDONNAME/libs
+
+#INITIAL DEFINES
+
+JAVACCMD=javac
+DXCMD=dx
+JARCMD=jar
+ADBCMD=adb
+
+function failure()
+{
+    echo "$@" >&2
+    exit 1
+}
+
+dirs=( $(find ${UILIBPATH} -maxdepth 99 -type d -printf '%P\n') )
+COMPILEPATH=""
+DEV_JAVA=""
+let i=1
+for var in "${dirs[@]}"; do
+    COMPILEPATH+=$var
+    COMPILEPATH+=" "
+    javafiles=( $(find ${UILIBPATH}/${var} -maxdepth 1 -name *.java) )
+    number="${#javafiles[@]}"
+    if [ "$number" -gt "0" ]; then
+        DEV_JAVA+=" "
+        DEV_JAVA+=${UILIBPATH}/$var/
+        DEV_JAVA+="*.java"
+    fi
+done
+
+dirs=( $(find ${IELIBPATH} -maxdepth 99 -type d -printf '%P\n') )
+let i=1
+for var in "${dirs[@]}"; do
+    COMPILEPATH+=$var
+    COMPILEPATH+=" "
+    javafiles=( $(find ${IELIBPATH}/${var} -maxdepth 1 -name *.java) )
+    number="${#javafiles[@]}"
+    if [ "$number" -gt "0" ]; then
+        DEV_JAVA+=" "
+        DEV_JAVA+=${IELIBPATH}/$var/
+        DEV_JAVA+="*.java"
+    fi
+done
+
+#RENDERED DEFINES
+DEX_OUTPUT=$BASEDIR
+DEV_CLASSES=$SIDEPATH/classes
+DEV_SRC=$PUILIBPATH
+
+JAR_FILE=$SIDEPATH/dex/tomtom_sdk.jar
+ADDON=$ADDONPATH/tomtom_platform_api.jar
+ADDON2=$ADDONPATH/tomtom_sdk.jar
+
+
+#EXECUTE STATEMENTS
+START=$(date +%s)
+echo "Compiling...." $COMPILEPATH
+$JAVACCMD -g -nowarn -d $DEV_CLASSES -classpath $ANDROID_HOME/platforms/android-8.8/android.jar:$ADDON:$DEV_CLASSES -sourcepath $DEV_JAVA || failure "Failed to compile"
+echo "Generating DEX file from:" $DEV_CLASSES 
+$DXCMD --dex --output=$DEX_OUTPUT/classes.dex $DEV_CLASSES  || failure "Failed to dex"
+cd $DEX_OUTPUT
+echo "Adding DEX to jar file...."
+$JARCMD uf $JAR_FILE ./classes.dex
+echo "Pushing jar file to target...."
+$ADBCMD push $JAR_FILE /system/framework/tomtom_sdk.jar
+if [ $? -eq 1 ]; then
+echo "Try again...."
+$ADBCMD shell stop
+$ADBCMD shell start
+sleep 10
+$ADBCMD push $JAR_FILE /system/framework/tomtom_sdk.jar
+fi
+echo "Rebooting target...."
+$ADBCMD shell stop
+$ADBCMD shell start
+END=$(date +%s)
+DIFF=$(( $END - $START ))
+echo "Done in $DIFF seconds..."

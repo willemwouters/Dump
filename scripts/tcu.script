@@ -1,0 +1,11 @@
+TT_CANbusControl_test uudt 0x58f 0x800a730c00000000
+TT_CANbusControl_test uudt 0x558 0x0100000000000000
+TT_CANbusControl_test uudt 0x578 0x0000000000000000
+TT_CANbusControl_test uudt 0x350 0xc700000000000000
+TT_CANbusControl_test uudt 0x69f 0x0000000500000000
+TT_CANbusControl_test uudt 0x5d7 0x0000000000000000
+TT_CANbusControl_test uudt 0x55d 0x0100083c003e8000
+TT_CANbusControl_test uudt 0x568 0x0000000000030400
+TT_CANbusControl_test uudt 0x35c 0xc400000000000000
+sleep_msec 300
+goto 1

@@ -1,0 +1,33 @@
+import time
+import numpy as np
+import matplotlib.pyplot as plt
+
+import serial
+amount_samples = 100
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+oldx = '0'
+xstr = 'A' #ser.read()          # read one byte
+print xstr
+
+fig=plt.figure()
+plt.axis([0,amount_samples, 0,10])
+i=0
+x=list()
+y=list()
+
+plt.ion()
+plt.show()
+
+
+while i <amount_samples:
+    x.append(i)
+    while len(xstr) == 0 or xstr == 'A' or xstr == "" or ord(xstr) > 200: #Wait for correct data
+        xstr = ser.read()
+
+    plt.plot((i-1, i), (oldx, xstr), marker="o",  color="green")
+    if xstr != 'A':
+        oldx = xstr
+    plt.grid(True)
+    i+=1
+    plt.draw()
+    xstr = 'A' #reset the state
