@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+DelayRXBitUART	D:\!Works\C\nRF24L01\main.c	60;"	f	line:60	signature:(void)
+DelayRXHalfBitUART	D:\!Works\C\nRF24L01\main.c	54;"	f	line:54	signature:(void)
+DelayTXBitUART	D:\!Works\C\nRF24L01\main.c	40;"	f	line:40	signature:(void)
+LED_OFF::PORTDbits.RD0=0;PORTAbits.RA4=	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	35;"	d	line:35
+LED_ON::PORTDbits.RD0=1;PORTAbits.RA4=	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	34;"	d	line:34
+MSG_SAUD_Radio_nRF24L01	D:\!Works\C\nRF24L01\main.c	88;"	l	line:88
+OpenUART	D:\!Works\C\nRF24L01\main.c	95;"	p	line:95	file:
+Open_nRF24L01_SPI	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	47;"	f	line:47	signature:(void)
+Open_nRF24L01_SPI	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	6;"	p	line:6	signature:(void)
+RADIO_ADDRESS_1::0x18	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	28;"	d	line:28
+RADIO_ADDRESS_2::0x00	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	29;"	d	line:29
+RADIO_ADDRESS_3::0x29	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	30;"	d	line:30
+RADIO_ADDRESS_4::0x35	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	31;"	d	line:31
+RADIO_ADDRESS_5::0x01	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	32;"	d	line:32
+RF_CHANNEL::0x84	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	24;"	d	line:24
+RF_DATA_RATE_250KBPS	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	21;"	d	line:21
+RF_PAYLOAD::0x10	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	26;"	d	line:26
+RX_Data	D:\!Works\C\nRF24L01\main.c	118;"	l	line:118
+SPI_CE::LATCbits.LATC1	D:\!Works\C\nRF24L01\hardware.h	6;"	d	line:6
+SPI_CE::LATCbits.LATC2	D:\!Works\C\nRF24L01\hardware.h	14;"	d	line:14
+SPI_CE::LATCbits.LATC2	D:\!Works\C\nRF24L01\hardware.h	31;"	d	line:31
+SPI_CE_TRIS::TRISCbits.RC2	D:\!Works\C\nRF24L01\hardware.h	23;"	d	line:23
+SPI_CE_TRIS::TRISCbits.RC2	D:\!Works\C\nRF24L01\hardware.h	40;"	d	line:40
+SPI_CSN::LATCbits.LATC1	D:\!Works\C\nRF24L01\hardware.h	13;"	d	line:13
+SPI_CSN::LATCbits.LATC1	D:\!Works\C\nRF24L01\hardware.h	30;"	d	line:30
+SPI_CSN::LATCbits.LATC2	D:\!Works\C\nRF24L01\hardware.h	5;"	d	line:5
+SPI_CSN_TRIS::TRISCbits.RC1	D:\!Works\C\nRF24L01\hardware.h	22;"	d	line:22
+SPI_CSN_TRIS::TRISCbits.RC1	D:\!Works\C\nRF24L01\hardware.h	39;"	d	line:39
+SPI_IRQ::PORTBbits.RB0	D:\!Works\C\nRF24L01\hardware.h	7;"	d	line:7
+SPI_IRQ::PORTCbits.RC6	D:\!Works\C\nRF24L01\hardware.h	15;"	d	line:15
+SPI_IRQ::PORTCbits.RC6	D:\!Works\C\nRF24L01\hardware.h	32;"	d	line:32
+SPI_IRQ_TRIS::TRISCbits.RC6	D:\!Works\C\nRF24L01\hardware.h	24;"	d	line:24
+SPI_IRQ_TRIS::TRISCbits.RC6	D:\!Works\C\nRF24L01\hardware.h	41;"	d	line:41
+SPI_SCALE::4	D:\!Works\C\nRF24L01\hardware.h	17;"	d	line:17
+SPI_SCALE::4	D:\!Works\C\nRF24L01\hardware.h	34;"	d	line:34
+SPI_SCALE::4	D:\!Works\C\nRF24L01\hardware.h	8;"	d	line:8
+SPI_SCK::LATBbits.LATB1	D:\!Works\C\nRF24L01\hardware.h	10;"	d	line:10
+SPI_SCK::LATBbits.LATB1	D:\!Works\C\nRF24L01\hardware.h	27;"	d	line:27
+SPI_SCK::LATCbits.LATC3	D:\!Works\C\nRF24L01\hardware.h	2;"	d	line:2
+SPI_SCK_TRIS::TRISBbits.RB1	D:\!Works\C\nRF24L01\hardware.h	19;"	d	line:19
+SPI_SCK_TRIS::TRISBbits.RB1	D:\!Works\C\nRF24L01\hardware.h	36;"	d	line:36
+SPI_SI::PORTBbits.RB0	D:\!Works\C\nRF24L01\hardware.h	12;"	d	line:12
+SPI_SI::PORTBbits.RB0	D:\!Works\C\nRF24L01\hardware.h	29;"	d	line:29
+SPI_SI::PORTCbits.RC4	D:\!Works\C\nRF24L01\hardware.h	4;"	d	line:4
+SPI_SI_TRIS::TRISBbits.RB0	D:\!Works\C\nRF24L01\hardware.h	21;"	d	line:21
+SPI_SI_TRIS::TRISBbits.RB0	D:\!Works\C\nRF24L01\hardware.h	38;"	d	line:38
+SPI_SO::LATCbits.LATC5	D:\!Works\C\nRF24L01\hardware.h	3;"	d	line:3
+SPI_SO::LATCbits.LATC7	D:\!Works\C\nRF24L01\hardware.h	11;"	d	line:11
+SPI_SO::LATCbits.LATC7	D:\!Works\C\nRF24L01\hardware.h	28;"	d	line:28
+SPI_SO_TRIS::TRISCbits.RC7	D:\!Works\C\nRF24L01\hardware.h	20;"	d	line:20
+SPI_SO_TRIS::TRISCbits.RC7	D:\!Works\C\nRF24L01\hardware.h	37;"	d	line:37
+Setup	D:\!Works\C\nRF24L01\main.c	86;"	f	line:86	signature:(void)
+TX_Data	D:\!Works\C\nRF24L01\main.c	117;"	l	line:117
+Test_SPI	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	83;"	f	line:83	signature:(void)
+Test_SPI	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	5;"	p	line:5	signature:(void)
+Usart_Send	D:\!Works\C\nRF24L01\main.c	73;"	f	line:73	signature:( unsigned char *MSG_SAUD )
+cmd	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	149;"	l	line:149
+cmd	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	260;"	l	line:260
+configure_RX	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	186;"	f	line:186	signature:(void)
+configure_RX	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	13;"	p	line:13	signature:(void)
+configure_Radio	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	322;"	f	line:322	signature:(void)
+configure_Radio	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	15;"	p	line:15	signature:(void)
+configure_transmitter	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	257;"	f	line:257	signature:(void)
+configure_transmitter	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	9;"	p	line:9	signature:(void)
+count	D:\!Works\C\nRF24L01\main.c	119;"	l	line:119
+count	D:\!Works\C\nRF24L01\main.c	135;"	l	line:135
+data	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	149;"	l	line:149
+data	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	260;"	l	line:260
+data	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	85;"	l	line:85
+data_read	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	86;"	l	line:86
+i	D:\!Works\C\nRF24L01\main.c	116;"	l	line:116
+i	D:\!Works\C\nRF24L01\main.c	75;"	l	line:75
+i	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	120;"	l	line:120
+i	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	149;"	l	line:149
+i	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	188;"	l	line:188
+i	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	259;"	l	line:259
+i	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	87;"	l	line:87
+j	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	120;"	l	line:120
+j	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	188;"	l	line:188
+j	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	259;"	l	line:259
+main	D:\!Works\C\nRF24L01\main.c	113;"	f	line:113	signature:(void)
+nop::_asmnop_endasm	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	18;"	d	line:18
+read_RX	D:\!Works\C\nRF24L01\main.c	131;"	p	line:131	file:
+read_RX	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	118;"	f	line:118	signature:(unsigned char *RX_Data)
+read_RX	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	12;"	p	line:12	signature:(unsigned char *RX_Data)
+result	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	49;"	l	line:49
+spi_Send_Read	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	75;"	f	line:75	signature:(unsigned char byte)
+status	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	87;"	l	line:87
+transmit_data	D:\!Works\C\nRF24L01\main.c	147;"	p	line:147	file:
+transmit_data	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.c	147;"	f	line:147	signature:( unsigned char *TX_Data )
+transmit_data	D:\!Works\C\nRF24L01\nRF24L01-Driver-Smart-Radio.h	10;"	p	line:10	signature:( unsigned char *TX_Data )

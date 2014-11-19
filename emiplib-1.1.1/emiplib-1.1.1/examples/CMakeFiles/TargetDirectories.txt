@@ -1,0 +1,8 @@
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/avsession.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/feedbackexample.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/multiplesoundfileplayer.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/pushtotalk.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/pushtotalk2.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/simplechain.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/soundfileplayer.dir
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples/CMakeFiles/soundrecorder.dir

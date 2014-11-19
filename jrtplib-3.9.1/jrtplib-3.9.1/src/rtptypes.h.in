@@ -1,0 +1,4 @@
+${RTP_WINSOCK_HEADERS}
+${RTP_INTTYPE_HEADERS}
+#include <stddef.h>
+#include <stdint.h>

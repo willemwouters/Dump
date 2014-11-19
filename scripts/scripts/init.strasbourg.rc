@@ -1,0 +1,162 @@
+on early-init
+    device /dev/block/mtdblock0 640 root oem
+    device /dev/twl4030-madc 640 root oem
+
+on init
+        # Setup the global environment
+    export DSP_PATH /system/lib/dsp
+    export DEFAULT_BASEIMAGE /system/lib/dsp/baseimage.dof
+    export QOSDYN_FILE /system/lib/dsp/qosdyn_3430.dll64P
+
+    # change permissions for bridge.  Symlink search directory
+    chmod 0777 /dev/DspBridge
+
+    # Permissions for setting the DSP Frequency
+    chown media root /sys/power/dsp_freq
+
+    # change permissions for Camera
+    chmod 0777 /dev/video5
+    chmod 0777 /dev/video0
+
+    # change permissions for Overlay
+    chmod 0777 /dev/video1
+    chmod 0777 /dev/video2
+
+    # change permissions for overlay managers and display devices
+    chmod 0777 /sys/devices/platform/omapdss/manager0/name
+    chmod 0777 /sys/devices/platform/omapdss/manager1/name
+
+    chmod 0777 /sys/devices/platform/omapdss/display0/name
+    chmod 0777 /sys/devices/platform/omapdss/display1/name
+
+    chmod 0777 /sys/devices/platform/omapdss/display0/enabled
+    chmod 0777 /sys/devices/platform/omapdss/display1/enabled
+
+    chmod 0777 /sys/devices/platform/omapdss/display1/timings
+    chmod 0777 /sys/devices/platform/omapdss/display0/timings
+
+    chmod 0777 /sys/devices/platform/omapdss/overlay0/manager
+    chmod 0777 /sys/devices/platform/omapdss/overlay1/manager
+    chmod 0777 /sys/devices/platform/omapdss/overlay2/manager
+
+    chmod 0777 /sys/devices/platform/omapdss/overlay0/enabled
+    chmod 0777 /sys/devices/platform/omapdss/overlay1/enabled
+    chmod 0777 /sys/devices/platform/omapdss/overlay2/enabled
+
+    # change permissions for Previewer and Resizer
+    chmod 0777 /dev/omap-previewer
+    chmod 0777 /dev/omap-resizer
+
+    chmod 0777 /dev/video6
+    chmod 0777 /dev/video10
+    chmod 0777 /dev/omap-prev2resz
+
+
+        # Bluetooth while waiting for [CORCON-506] to improve Bluetooth chip 
+        # reset functionality on Android platform.
+        #
+        # Bluetooth chip reset (assuming device is attached to rfkill0)
+        # csrinit will not be used anymore, 3rd party initializes the chip, but chip has to be reset
+        # assuming that numbering of the bluetooth will not change and
+        # device is attached to rfkill0
+        # todo CORCON-486 : scan entries under /sys/class/rfkill to find which device is bluetooth
+        chmod 777 /dev/ttyO1
+        write /sys/class/rfkill/rfkill0/state 1
+
+	# GPS daemon data
+	mkdir /data/gps 0770 system oem
+
+	# vehicle daemon data
+	mkdir /data/vddata 0750 oem oem
+	chmod 0750 /data/vddata
+
+	# owners, modes for sensors
+	mkdir /data/sensors
+	chown system oem /data/sensors
+	chmod 2770 /data/sensors
+
+	# set oem permissions to access the eeprom
+        chown root oem /sys/devices/platform/i2c_omap.3/i2c-3/3-0050/eeprom
+        chmod 0660 /sys/devices/platform/i2c_omap.3/i2c-3/3-0050/eeprom
+
+	# set oem permissions to access the suicide alarm interval file
+	chown root oem /sys/devices/platform/suicide_alarm.0/alarm_interval
+	chmod 0664 /sys/devices/platform/suicide_alarm.0/alarm_interval
+
+	# set oem permissions to access the suicide alarm interval reboot file
+	chown root oem /sys/devices/platform/suicide_alarm.0/alarm_interval_reboot
+	chmod 0664 /sys/devices/platform/suicide_alarm.0/alarm_interval_reboot
+
+	# set oem permissions to access the touchscreen disable file
+	chown root oem /sys/bus/i2c/drivers/tsc2007/2-0048/disable
+	chmod 0664 /sys/bus/i2c/drivers/tsc2007/2-0048/disable
+
+	# limit the frequency to 800 MHz
+	write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 800000
+
+# SGX driver
+    chmod 0666 /dev/pvrsrvkm
+
+# Initialize the SGX driver
+    service pvrsrvinit /system/bin/pvrsrvinit
+        user root
+        oneshot
+
+###############################################################################
+
+on boot
+
+		symlink /dev/fdtraw /dev/fdt_part
+		symlink /dev/block/mmcblk0p2 /dev/content_part
+
+		# symlink GPS to uart 0
+		symlink /dev/ttyO0 /dev/ttyGPS
+
+		# symlink Bluetooth to uart 1
+		symlink /dev/ttyO1 /dev/ttyBT
+
+		# make FDT partition readable
+		chmod 0444 /dev/fdtraw
+
+		# make PPP sripts readable for all
+		chmod 0555 /etc/ppp/ip-up
+		chmod 0555 /etc/ppp/ip-down
+
+		# load DSP firmware
+		service baseimage /system/bin/cexec.out /system/lib/dsp/baseimage.dof
+			user root
+			group audio
+			oneshot
+
+		# start GPS daemon
+		service gpsd /system/bin/glgps -c /system/etc/glconfig.xml
+			user root
+			group system radio
+
+		service vehicle_daemon /system/ttdaemon/vehicledaemon -c /system/ttdaemon -f /system/ttdaemon
+			user oem
+			group oem inet camera input
+
+
+		service dhcpcd /system/bin/dhcpcd -ABKL
+			disabled
+			oneshot
+
+		# Factory data
+		service load_fdt /system/bin/load_fdt
+			user root
+			oneshot
+
+		# Calibration data
+		service copycal /system/bin/copycal
+			user root
+			oneshot
+
+###############################################################################
+
+on property:dev.bootcomplete=1
+		# reset flip-flop
+		# NOTE: The quoted value includes a newline since the flip-flop driver
+		# currently still requires that.
+		write /sys/devices/platform/flipflop/value "0
+"

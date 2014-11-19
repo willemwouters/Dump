@@ -1,0 +1,541 @@
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/coreaudio_dev.o: ../src/pjmedia-audiodev/coreaudio_dev.m \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/audiodev.o: ../src/pjmedia-audiodev/audiodev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/audiotest.o: ../src/pjmedia-audiodev/audiotest.c \
+  ../include/pjmedia-audiodev/audiotest.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pjlib.h \
+  ../../pjlib/include/pj/activesock.h ../../pjlib/include/pj/ioqueue.h \
+  ../../pjlib/include/pj/addr_resolv.h ../../pjlib/include/pj/array.h \
+  ../../pjlib/include/pj/assert.h ../../pjlib/include/pj/compat/assert.h \
+  /usr/include/assert.h ../../pjlib/include/pj/ctype.h \
+  ../../pjlib/include/pj/compat/ctype.h /usr/include/ctype.h \
+  /usr/include/runetype.h ../../pjlib/include/pj/except.h \
+  ../../pjlib/include/pj/compat/setjmp.h /usr/include/setjmp.h \
+  /usr/include/machine/setjmp.h /usr/include/i386/setjmp.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/fifobuf.h \
+  ../../pjlib/include/pj/file_access.h ../../pjlib/include/pj/file_io.h \
+  ../../pjlib/include/pj/guid.h ../../pjlib/include/pj/hash.h \
+  ../../pjlib/include/pj/ip_helper.h ../../pjlib/include/pj/lock.h \
+  ../../pjlib/include/pj/math.h \
+  ../../pjlib/include/pj/compat/high_precision.h /usr/include/math.h \
+  /usr/include/architecture/i386/math.h ../../pjlib/include/pj/os.h \
+  ../../pjlib/include/pj/pool_buf.h ../../pjlib/include/pj/rand.h \
+  ../../pjlib/include/pj/rbtree.h ../../pjlib/include/pj/sock_qos.h \
+  ../../pjlib/include/pj/sock_select.h ../../pjlib/include/pj/ssl_sock.h \
+  ../../pjlib/include/pj/timer.h ../../pjlib/include/pj/unicode.h \
+  ../../pjlib-util/include/pjlib-util.h \
+  ../../pjlib-util/include/pjlib-util/errno.h \
+  ../../pjlib-util/include/pjlib-util/types.h \
+  ../../pjlib-util/include/pjlib-util/config.h \
+  ../../pjlib-util/include/pjlib-util/getopt.h \
+  ../../pjlib-util/include/pjlib-util/base64.h \
+  ../../pjlib-util/include/pjlib-util/crc32.h \
+  ../../pjlib-util/include/pjlib-util/hmac_md5.h \
+  ../../pjlib-util/include/pjlib-util/md5.h \
+  ../../pjlib-util/include/pjlib-util/hmac_sha1.h \
+  ../../pjlib-util/include/pjlib-util/sha1.h \
+  ../../pjlib-util/include/pjlib-util/dns.h \
+  ../../pjlib-util/include/pjlib-util/resolver.h \
+  ../../pjlib-util/include/pjlib-util/srv_resolver.h \
+  ../../pjlib-util/include/pjlib-util/dns_server.h \
+  ../../pjlib-util/include/pjlib-util/scanner.h \
+  ../../pjlib-util/include/pjlib-util/scanner_cis_bitwise.h \
+  ../../pjlib-util/include/pjlib-util/string.h \
+  ../../pjlib-util/include/pjlib-util/xml.h \
+  ../../pjlib-util/include/pjlib-util/json.h \
+  ../../pjlib-util/include/pjlib-util/stun_simple.h \
+  ../../pjlib-util/include/pjlib-util/pcap.h \
+  ../../pjlib-util/include/pjlib-util/http_client.h \
+  ../../pjlib-util/include/pjlib-util/cli.h \
+  ../../pjlib-util/include/pjlib-util/cli_console.h \
+  ../../pjlib-util/include/pjlib-util/cli_imp.h \
+  ../../pjlib-util/include/pjlib-util/cli_telnet.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/errno.o: ../src/pjmedia-audiodev/errno.c \
+  ../include/pjmedia-audiodev/errno.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../../pjlib/include/pj/errno.h ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/unicode.h \
+  /Users/willemwouters/Downloads/pjproject-2.2.1/pjproject-2.2.1/third_party/portaudio/include/portaudio.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/legacy_dev.o: ../src/pjmedia-audiodev/legacy_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/pjmedia/sound.h \
+  ../../pjlib/include/pj/assert.h ../../pjlib/include/pj/compat/assert.h \
+  /usr/include/assert.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/null_dev.o: ../src/pjmedia-audiodev/null_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/pa_dev.o: ../src/pjmedia-audiodev/pa_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  /Users/willemwouters/Downloads/pjproject-2.2.1/pjproject-2.2.1/third_party/portaudio/include/portaudio.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/wmme_dev.o: ../src/pjmedia-audiodev/wmme_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../../pjlib/include/pj/unicode.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/alsa_dev.o: ../src/pjmedia-audiodev/alsa_dev.c \
+  ../include/pjmedia_audiodev.h ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiotest.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../include/pjmedia/errno.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/bb10_dev.o: ../src/pjmedia-audiodev/bb10_dev.c \
+  ../include/pjmedia_audiodev.h ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiotest.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../include/pjmedia/errno.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/bdimad_dev.o: ../src/pjmedia-audiodev/bdimad_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../../pjlib/include/pj/unicode.h ../include/pjmedia/errno.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/android_jni_dev.o: ../src/pjmedia-audiodev/android_jni_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../include/pjmedia/errno.h
+output/pjmedia-audiodev-x86_64-apple-darwin11.4.2/opensl_dev.o: ../src/pjmedia-audiodev/opensl_dev.c \
+  ../include/pjmedia-audiodev/audiodev_imp.h \
+  ../include/pjmedia-audiodev/audiodev.h \
+  ../include/pjmedia-audiodev/config.h ../include/pjmedia/types.h \
+  ../include/pjmedia/config.h ../../pjlib/include/pj/config.h \
+  ../../pjlib/include/pj/compat/cc_gcc.h \
+  ../../pjlib/include/pj/compat/os_auto.h \
+  /usr/include/TargetConditionals.h \
+  ../../pjlib/include/pj/compat/m_auto.h \
+  ../../pjlib/include/pj/compat/size_t.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  ../../pjlib/include/pj/config_site.h ../include/pjmedia/config_auto.h \
+  ../../pjlib/include/pj/sock.h ../../pjlib/include/pj/types.h \
+  ../../pjlib/include/pj/pool.h ../../pjlib/include/pj/list.h \
+  ../include/pjmedia-audiodev/errno.h ../../pjlib/include/pj/errno.h \
+  ../../pjlib/include/pj/compat/errno.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
+  ../include/pjmedia/format.h ../include/pjmedia/frame.h \
+  ../../pjlib/include/pj/string.h ../../pjlib/include/pj/compat/string.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../../pjlib/include/pj/assert.h \
+  ../../pjlib/include/pj/compat/assert.h /usr/include/assert.h \
+  ../../pjlib/include/pj/log.h ../../pjlib/include/pj/os.h \
+  ../include/pjmedia/errno.h

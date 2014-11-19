@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-03-26T20:26:47.494512Z"
+   url="svn+ssh://svn.berlios.de/svnroot/repos/konference/konference/admin/CVS"
+   last-author="maldn"
+   kind="dir"
+   uuid="78b7051f-3df3-0310-b53a-843adf2bcdc5"
+   revision="56"/>
+<entry
+   committed-rev="1"
+   name="Repository"
+   text-time="2005-04-19T12:03:20.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="8af66473732ba970bee8d6daa66b06fc"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Root"
+   text-time="2005-04-19T12:03:20.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="83929559ffe8fe32c2c2024ca06ddf1e"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Entries"
+   text-time="2005-04-19T12:03:20.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="9217c0ea8b553cce7f04875e65e60e40"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Template"
+   text-time="2005-04-19T12:03:20.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+</wc-entries>

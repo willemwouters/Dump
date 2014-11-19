@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-03-26T20:26:47.494512Z"
+   url="svn+ssh://svn.berlios.de/svnroot/repos/konference/konference/admin"
+   last-author="maldn"
+   kind="dir"
+   uuid="78b7051f-3df3-0310-b53a-843adf2bcdc5"
+   revision="56"/>
+<entry
+   committed-rev="1"
+   name="config.pl"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="559c022bb0dd1bd238c08bcfb5707e92"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Doxyfile.am"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="97a5ca3e8d0ca5cc900a0deb9d167dcf"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mkinstalldirs"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="792922784eade1d03ecb1b33ba8bb7c3"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Doxyfile.global"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="c1c0cb064179c90d20bb30686452c937"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="conf.change.pl"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="d77258b242757b12c8d3fd82f940979e"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cvs-clean.pl"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="d169770e6407cda43812685d17b914b6"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="depcomp"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="69ae9a1581b9353d955a38c7372376cf"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="deps.am"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="eb846309aca35c1b4e2189e5c5941348"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="compile"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="d62ab7d10a79b295897b39e4b8565fd7"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:19.000000Z"/>
+<entry
+   committed-rev="1"
+   name="libtool.m4.in"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="2b79a5a166e10f3a7815e30016afa7ed"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="bcheck.pl"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="34fec2369f7555b4c13c6ff3dbb4bbd9"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="config.guess"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="7a8937abf7274a35017ee4b92be94063"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   name="CVS"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="config.sub"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="2dce550ddc2b673f5cff59b2f7ae9658"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="debianrules"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="252fca46dfa6eb49537aac6d27288da5"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="detect-autoconf.sh"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="9d01d04e00833a6494e9ab612391c01f"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ltmain.sh"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="b74ece7030cdc5c98accc0dbd3224181"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="am_edit"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="eee525bb1bb95a322e11dd61d9780cfb"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="cvs.sh"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="17931c532bd99d9221d9f6a8ab68f794"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Makefile.common"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="07a976eab07ab8d4f0e6727270e7a6d6"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="pkg.m4.in"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="8bc9c6be20df8421c1a687421fbfde85"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="oldinclude.m4.in"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="5ee2a05b3156b9946ac0602697dcb306"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="configure.in.min"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="51c64bc8c4424e9c2bb536d27994c4ec"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nmcheck"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="71cdede2a453e557e99c97f8ead7a292"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="missing"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="2a8eef1110e32e279e0bbbc228155171"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="acinclude.m4.in"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="9528dc926cef5f5e40cdba47d84e626c"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:22.000000Z"/>
+<entry
+   committed-rev="1"
+   name="configure.in.bot.end"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="63011cfa39e6d200f167dad910c006d0"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:22.000000Z"/>
+<entry
+   committed-rev="1"
+   name="install-sh"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="9538a290f5033a4ed4bb8f7fc1dea5f2"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:22.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ylwrap"
+   text-time="2005-04-19T12:03:22.000000Z"
+   committed-date="2005-03-26T20:26:47.494512Z"
+   checksum="573f3530676159e6ce6f0224acd34c51"
+   last-author="maldn"
+   kind="file"
+   prop-time="2005-04-19T12:03:22.000000Z"/>
+</wc-entries>

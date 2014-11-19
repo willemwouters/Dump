@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/jidctflt.c
+miptypes.h
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/miptypes.h
+tinyjpeg-internal.h
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg-internal.h
+
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg-internal.h
+stddef.h
+-
+stdint.h
+-
+setjmp.h
+-
+
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+miptypes.h
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/miptypes.h
+tinyjpeg.h
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg.h
+tinyjpeg-internal.h
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg-internal.h
+
+/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/src/thirdparty/tinyjpeg/tinyjpeg.h
+stddef.h
+-
+stdint.h
+-
+
+core/miptypes.h
+

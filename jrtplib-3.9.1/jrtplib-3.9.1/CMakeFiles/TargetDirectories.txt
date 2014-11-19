@@ -1,0 +1,2 @@
+/Users/willemwouters/Downloads/jrtplib-3.9.1/jrtplib-3.9.1/CMakeFiles/jrtplib-shared.dir
+/Users/willemwouters/Downloads/jrtplib-3.9.1/jrtplib-3.9.1/CMakeFiles/jrtplib-static.dir

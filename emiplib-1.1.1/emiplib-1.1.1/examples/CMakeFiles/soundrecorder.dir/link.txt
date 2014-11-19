@@ -1,0 +1,1 @@
+/usr/bin/c++   -m32 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/soundrecorder.dir/soundrecorder.o  -o soundrecorder  -L/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples  -lemip -ljthread -ljrtp -Wl,-rpath,/Users/willemwouters/Downloads/emiplib-1.1.1/emiplib-1.1.1/examples 
